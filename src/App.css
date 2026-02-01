@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3390EC;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2870B8;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-thumb {
+  background: #3B82F6;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #2563EB;
+}
+
+/* Smooth animations */
+* {
+  transition-property: background-color, border-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
